@@ -1,0 +1,1444 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="ab3793e6-f4ba-4c2d-a4d2-82f15b71858d" data-section-id="ab3793e6-f4ba-4c2d-a4d2-82f15b71858d">
+
+
+                <htmlcode>
+<!-- Navbar Section -->
+<div id="root">
+  <nav id="navbar" class="fixed w-full bg-neutral-900 text-white z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold" contenteditable="false"></a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#hero" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="#about" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <a href="#experience" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+            <a href="#skills" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+            <a href="#projects" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+            <a href="#contact" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-700 focus:outline-none">
+            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+              <path class="block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Home</a>
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">About</a>
+        <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Experience</a>
+        <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Skills</a>
+        <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Projects</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.getElementsByTagName('a');
+    for (const link of mobileLinks) {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    }
+
+    // Add smooth scrolling to all navbar links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add scroll event listener for navbar background
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('shadow-lg');
+      } else {
+        navbar.classList.remove('shadow-lg');
+      }
+    });
+  </script>
+</div>
+</htmlcode>
+              </element><element id="82b26823-2ee7-4b7c-a86b-86701106c10b" data-section-id="82b26823-2ee7-4b7c-a86b-86701106c10b">
+
+
+                
+                <htmlcode id="el-cq7ka1uu">
+<div id="hero" class="bg-neutral-900 text-white min-h-[70vh] flex items-center pt-16 animate__animated animate__fadeIn">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full" id="el-qouluy4d">
+    <div class="grid md:grid-cols-2 gap-8 items-center" id="el-mqjvk114">
+      <div class="space-y-6 animate__animated animate__fadeInLeft" id="el-x61ackwf">
+        <p class="text-indigo-400 font-medium" id="el-evfqowga">Hello, I'm</p>
+        <h1 class="text-4xl md:text-6xl font-bold" id="el-gswczmk1">K. Priyadharshini</h1>
+        <h2 class="text-2xl md:text-3xl text-gray-300" id="el-cg6pkxto" contenteditable="false">Software Developer</h2>
+        <p class="text-gray-400 max-w-lg" id="el-tlw21gat">
+          A detail-oriented Software Developer with 3 years of experience in creating user-focused, responsive, and scalable web and mobile applications.
+        </p>
+        <div class="flex gap-4" id="el-vfb34qru">
+          <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-medium transition-colors" id="el-vbbuewgr">
+            Contact Me
+          </a>
+          <a href="#projects" class="border border-indigo-600 hover:bg-indigo-600/10 px-6 py-3 rounded-lg font-medium transition-colors" id="el-xtwefe42">
+            View Projects
+          </a>
+        </div>
+        <div class="flex gap-4 pt-4" id="el-0qfe2a8u">
+          <!-- <a href="mailto:pd999796@gmail.com" class="text-gray-400 hover:text-white transition-colors" id="el-y925sxn1">
+            
+          </a>
+          <a href="https://linkedin.com/in/linkedin-profile" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors" id="el-ecuth0be">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" id="el-m0t6j7qz">
+              <a href="https://www.linkedin.com/in/priyadharshini-k-02b590212" target="_blank" rel="noopener noreferrer" class="linkedin-link" id="el-p82kemn8">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" id="el-tgsz1py8">
+    <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" id="el-pmwyxnyg"></path>
+  </svg>
+  <span class="sr-only" id="el-eo6g2e6t">LinkedIn Profile</span>
+</a>
+            </svg>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors" id="el-206kx08c">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" id="el-8i2ri2vd">
+              
+            </svg>
+          </a> -->
+        </div>
+      </div>
+      <div class="hidden md:block animate__animated animate__fadeInRight" id="el-fnqqelk0">
+        <div class="relative" id="el-b3jhr287">
+          <div class="absolute inset-0 bg-indigo-600 rounded-full blur-lg opacity-30" id="el-j8p79s3g"></div>
+          <div class="relative bg-neutral-800 p-8 rounded-lg border border-neutral-700" id="el-armk42pc">
+            <div class="space-y-4" id="el-x3lgtrst">
+              <div class="flex items-center gap-2" id="el-o375thrg">
+                <span class="text-indigo-400" id="el-otjy4ddw">▹</span>
+                <p class="text-gray-300" id="el-oesywzho">3+ years of frontend development</p>
+              </div>
+              <div class="flex items-center gap-2" id="el-5nve1p0g">
+                <span class="text-indigo-400" id="el-cwt5lkm1">▹</span>
+                <p class="text-gray-300" id="el-h6e2xe0g">React.js, Next.js, React Native</p>
+              </div>
+              <div class="flex items-center gap-2" id="el-2z69wfqb">
+                <span class="text-indigo-400" id="el-f3nfvgef">▹</span>
+                <p class="text-gray-300" id="el-i9ynd1g4">Front end development experience</p>
+              </div>
+              <div class="flex items-center gap-2" id="el-rziac6vg">
+                <span class="text-indigo-400" id="el-y5689aa1">▹</span>
+                <p class="text-gray-300" id="el-cmlaknhn">B.Tech in ECE with 7.23 CGPA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add scroll reveal animation
+    const heroContent = document.querySelector('#hero');
+    heroContent.classList.add('animate__animated', 'animate__fadeIn');
+});
+</script>
+</htmlcode>
+              
+              </element><element id="4559e881-af03-4e56-964e-aded403eb2c4" data-section-id="4559e881-af03-4e56-964e-aded403eb2c4">
+
+
+                <htmlcode id="el-2qnf5eqy">
+<section id="about" class="py-20 bg-white animate__animated animate__fadeIn">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl font-bold text-neutral-900 mb-4">About Me</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="animate__animated animate__fadeInLeft">
+        <div class="bg-neutral-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Professional Overview</h3>
+          <p class="text-neutral-700 mb-6">
+            Adaptable and quick-learning Software Developer with 3 years of experience in creating user-focused solutions. Known for rapidly mastering new technologies and frameworks while maintaining high-quality deliverables. Demonstrates exceptional ability to adapt to changing project requirements and team dynamics.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="text-indigo-600">▹</span>
+              <span class="text-neutral-700">Frontend Development Specialist</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-indigo-600">▹</span>
+              <span class="text-neutral-700">B.TECH ECE Graduate from VELTECH UNIVERSITY</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-indigo-600">▹</span>
+              <span class="text-neutral-700">Based in Bangalore, India</span>
+            </div>      
+            <div class="flex items-center gap-3">
+              <span class="text-indigo-600">▹</span>
+              <span class="text-neutral-700">Quick Learner with Strong Problem-Solving Skills</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-indigo-600">▹</span>
+              <span class="text-neutral-700">Excellent Adaptability to New Technologies</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-indigo-600">▹</span>
+              <span class="text-neutral-700">Effective Team Collaboration &amp; Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-6 animate__animated animate__fadeInRight">
+        <div class="bg-neutral-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-neutral-900 mb-4">Core Competencies</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-neutral-700">React.js</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-neutral-700">Next.js</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-neutral-700">React Native</span>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-neutral-700">TypeScript</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-neutral-700">Redux</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-neutral-700">REST APIs</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <h4 class="text-lg font-semibold text-neutral-900 mb-3" style="margin: 23px 2px 2px;">Additional Skills</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="text-neutral-700">TailwindCSS</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="text-neutral-700">Git/GitHub</span>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="text-neutral-700">Jest/Testing</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="text-neutral-700">CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add scroll reveal animation
+    const aboutSection = document.querySelector('#about');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated', 'animate__fadeIn');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    observer.observe(aboutSection);
+});
+</script>
+</htmlcode>
+              </element><element id="3cf014f4-1888-4653-95c5-29d78e9c8bb1" data-section-id="3cf014f4-1888-4653-95c5-29d78e9c8bb1">
+
+
+                <htmlcode>
+<section id="experience" class="py-20 bg-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn animate__fadeInLeft" style="visibility: visible;">
+      <h2 class="text-3xl font-bold text-neutral-900 mb-4">Work Experience</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <!-- Current Position -->
+      <div class="relative pl-8 sm:pl-32 py-6 group animate__animated animate__fadeInLeft" style="visibility: visible;">
+        <div class="flex flex-col sm:flex-row items-start mb-1 group-hover:text-indigo-600 transition-colors">
+          <div class="flex items-center mb-2 sm:mb-0">
+            <div class="absolute left-0 sm:left-24 w-8 h-8 bg-indigo-600 border-4 border-white rounded-full"></div>
+            <div class="hidden sm:block absolute left-0 top-0 bottom-0 w-24 text-sm text-neutral-600" contenteditable="false">
+              2022 - Present
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 w-full transform transition-transform hover:scale-[1.02]">
+            <h3 class="text-xl font-bold text-neutral-900">Software Developer</h3>
+            <p class="text-neutral-600 mb-2">Verbinden Communication Pvt Ltd</p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <span class="text-indigo-600 mt-1">▹</span>
+                <p class="text-neutral-700">Developed and maintained front-end components for websites and mobile applications, ensuring optimal performance and usability.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-indigo-600 mt-1">▹</span>
+                <p class="text-neutral-700">Utilized HTML, CSS, React (JavaScript/TypeScript), and Next.js with Redux to create dynamic and user-friendly interfaces.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-indigo-600 mt-1">▹</span>
+                <p class="text-neutral-700">Integrated RESTful APIs for seamless communication between front-end interfaces and backend services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outsourced Position -->
+      <div class="relative pl-8 sm:pl-32 py-6 group animate__animated animate__fadeInLeft" style="animation-delay: 0.2s; visibility: visible;">
+        <div class="flex flex-col sm:flex-row items-start mb-1 group-hover:text-indigo-600 transition-colors">
+          <div class="flex items-center mb-2 sm:mb-0">
+            <div class="absolute left-0 sm:left-24 w-8 h-8 bg-indigo-600 border-4 border-white rounded-full"></div>
+            <div class="hidden sm:block absolute left-0 top-0 bottom-0 w-24 text-sm text-neutral-600" contenteditable="false">Jun-2022 - Jan-2023
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 w-full transform transition-transform hover:scale-[1.02]">
+            <h3 class="text-xl font-bold text-neutral-900">Outsourced to Cogniquest.ai</h3>
+            <p class="text-neutral-600 mb-2">via Verbinden Communication</p>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <span class="text-indigo-600 mt-1">▹</span>
+                <p class="text-neutral-700">Supervised and mentored two junior developers, providing guidance and ensuring timely project delivery.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-indigo-600 mt-1">▹</span>
+                <p class="text-neutral-700">Contributed to React.js B2B website applications for BESCOM, ICCO, Pharma-PV, and Tech-MRS projects.</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-indigo-600 mt-1">▹</span>
+                <p class="text-neutral-700">Developed functionality for invoice document processing and reconciliation, automating data extraction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const experienceSection = document.querySelector('#experience');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.animate__animated').forEach(element => {
+              element.style.visibility = 'visible';
+              element.classList.add('animate__fadeInLeft');
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(experienceSection);
+    });
+  </script>
+</section>
+</htmlcode>
+              </element><element id="962db5a1-e7c2-4d2c-815b-ecd46d47fb69" data-section-id="962db5a1-e7c2-4d2c-815b-ecd46d47fb69">
+
+<htmlCode>
+<section id="skills" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl font-bold text-neutral-900 mb-4">Technical Skills</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Languages -->
+      <div class="bg-neutral-50 p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 animate__animated animate__fadeInUp">
+        <h3 class="text-xl font-semibold text-neutral-900 mb-4 flex items-center">
+          <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+          Languages
+        </h3>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>JavaScript</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>TypeScript</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Frontend -->
+      <div class="bg-neutral-50 p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+        <h3 class="text-xl font-semibold text-neutral-900 mb-4 flex items-center">
+          <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Frontend
+        </h3>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>React.js</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>Next.js</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>React Native</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>Redux</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Backend -->
+      <div class="bg-neutral-50 p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+        <h3 class="text-xl font-semibold text-neutral-900 mb-4 flex items-center">
+          <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+          </svg>
+          Backend
+        </h3>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>Node.js</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>MongoDB</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>MySQL</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>Mongoose</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="bg-neutral-50 p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 animate__animated animate__fadeInUp" style="animation-delay: 0.6s">
+        <h3 class="text-xl font-semibold text-neutral-900 mb-4 flex items-center">
+          <svg class="w-6 h-6 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+          </svg>
+          Tools & Others
+        </h3>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>Git</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>GitHub</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>REST APIs</span>
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full mr-2"></span>
+            <span>WordPress</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const skillsSection = document.querySelector('#skills');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.animate__animated').forEach((element, index) => {
+              setTimeout(() => {
+                element.style.visibility = 'visible';
+                element.classList.add('animate__fadeInUp');
+              }, index * 200);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(skillsSection);
+    });
+  </script>
+</section>
+</htmlCode></element><element id="ec835f65-54a4-40e1-8503-0d1244d7860b" data-section-id="ec835f65-54a4-40e1-8503-0d1244d7860b">
+
+
+                <htmlcode id="el-bm12o2bd">
+<section id="projects" class="py-20 bg-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn" style="visibility: visible;">
+      <h2 class="text-3xl font-bold text-neutral-900 mb-4">Featured Projects</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Shop Local Digital Platform -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] animate__animated animate__fadeInLeft animate__fadeIn" style="visibility: visible;">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold text-neutral-900">Shop Local Digital Platform</h3>
+            <div class="flex space-x-2">
+              <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-600 rounded-full">React.js</span>
+              <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-600 rounded-full">Redux</span>
+            </div>
+          </div>
+          <p class="text-neutral-600 mb-6">
+            A Hyper-Local Community Marketplace platform enabling communities to establish their own digital marketplace, fostering local commerce and community engagement.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Developed the Marketplace Management System (MMS) with complete frontend design and API integrations</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Implemented AI Support System using LLMs for real-time chat queries and document search</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Enhanced platform scalability and user experience across six modules</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FleaTiger -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] animate__animated animate__fadeInRight animate__fadeIn" style="visibility: visible;">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold text-neutral-900">FleaTiger</h3>
+            <div class="flex space-x-2">
+              <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-600 rounded-full">React Native</span>
+              <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-600 rounded-full">Redux</span>
+            </div>
+          </div>
+          <p class="text-neutral-600 mb-6">
+            A mobile application for pet owners to track and monitor their pets' daily activities, food intake, and social interactions, providing comprehensive pet management.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Developed features for tracking and monitoring pet activities and social interactions</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Designed intuitive user interfaces for logging daily activities and food intake</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Implemented real-time data synchronization and offline capability</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Document Processing System -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] animate__animated animate__fadeInLeft animate__fadeIn" style="visibility: visible;">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold text-neutral-900">B2B Document Processing</h3>
+            <div class="flex space-x-2">
+              <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-600 rounded-full">React.js</span>
+              <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-600 rounded-full">Redux</span>
+            </div>
+          </div>
+          <p class="text-neutral-600 mb-6">
+            Comprehensive document processing system for B2B applications, enabling efficient handling of PDFs and Word documents.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Implemented document processing features for BESCOM, ICCO, Pharma-PV, and Tech-MRS</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Developed invoice processing and reconciliation functionality</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Institute of Inspiring Innovation -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all hover:scale-[1.02] animate__animated animate__fadeInRight animate__fadeIn" style="visibility: visible;">
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-2xl font-bold text-neutral-900">Institute of Inspiring Innovation</h3>
+            <div class="flex space-x-2">
+              
+              <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-600 rounded-full">WordPress</span>
+            </div>
+          </div>
+          <p class="text-neutral-600 mb-6">
+            Educational platform dedicated to nurturing future leaders through innovative thinking and entrepreneurial skill development.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Developed comprehensive course management and event scheduling system</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Implemented user-friendly interface for exploring training programs and educational resources</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-indigo-600 mt-1">▹</span>
+              <p class="text-neutral-700">Created responsive design optimized for various devices and screen sizes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const projectsSection = document.querySelector('#projects');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.animate__animated').forEach((element, index) => {
+              setTimeout(() => {
+                element.style.visibility = 'visible';
+                element.classList.add('animate__fadeIn');
+              }, index * 200);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(projectsSection);
+    });
+  </script>
+</section>
+</htmlcode>
+              </element><element id="6fcf3b36-656b-44ea-9c31-ec3b354fe43e" data-section-id="6fcf3b36-656b-44ea-9c31-ec3b354fe43e">
+
+<htmlCode>
+<section id="testimonials" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl font-bold text-neutral-900 mb-4">Professional Endorsements</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Project Manager Testimonial -->
+      <div class="bg-neutral-50 p-8 rounded-xl shadow-lg transform transition-all hover:scale-[1.02] animate__animated animate__fadeInLeft">
+        <div class="flex flex-col h-full">
+          <div class="mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+            </svg>
+          </div>
+          <blockquote class="flex-1 mb-6">
+            <p class="text-lg text-neutral-700 italic">
+              "An exceptional frontend developer who consistently delivers high-quality code. Their expertise in React and ability to solve complex problems has been invaluable to our team."
+            </p>
+          </blockquote>
+          <div class="border-t border-neutral-200 pt-4">
+            <p class="font-semibold text-neutral-900">Project Manager</p>
+            <p class="text-neutral-600">Verbinden Communication</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Lead Testimonial -->
+      <div class="bg-neutral-50 p-8 rounded-xl shadow-lg transform transition-all hover:scale-[1.02] animate__animated animate__fadeInRight">
+        <div class="flex flex-col h-full">
+          <div class="mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+            </svg>
+          </div>
+          <blockquote class="flex-1 mb-6">
+            <p class="text-lg text-neutral-700 italic">
+              "Their mentorship of junior developers and commitment to code quality has significantly improved our team's performance. Their expertise in React Native and Next.js has been crucial for our projects."
+            </p>
+          </blockquote>
+          <div class="border-t border-neutral-200 pt-4">
+            <p class="font-semibold text-neutral-900">Technical Lead</p>
+            <p class="text-neutral-600">Cogniquest.ai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const testimonialsSection = document.querySelector('#testimonials');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.animate__animated').forEach((element, index) => {
+              setTimeout(() => {
+                element.style.visibility = 'visible';
+                element.classList.add('animate__fadeIn');
+              }, index * 200);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(testimonialsSection);
+    });
+  </script>
+</section>
+</htmlCode></element><element id="89f6b4c0-035a-4283-b9b9-e5f8ed1522ac" data-section-id="89f6b4c0-035a-4283-b9b9-e5f8ed1522ac">
+
+
+                <htmlcode id="el-f30rykv1">
+                  <section id="contact" class="py-20 bg-neutral-100" style="padding: 40px;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl font-bold text-neutral-900 mb-4">Get In Touch</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <!-- Email Card -->
+      <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp hover:transform hover:scale-105 transition-all duration-300">
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-indigo-100 p-4 rounded-full mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="margin: 10px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" class=""></path>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-neutral-900 mb-2">Email</h4>
+          <a href="mailto:pd999796@gmail.com" class="text-indigo-600 hover:text-indigo-700 break-all">pd999796@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- Phone Card -->
+      <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.2s;">
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-indigo-100 p-4 rounded-full mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="padding: 0px; margin: 10px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-neutral-900 mb-2">Phone</h4>
+          <a href="tel:+917019625823" class="text-indigo-600 hover:text-indigo-700">+91-7019625823</a>
+        </div>
+      </div>
+
+      <!-- LinkedIn Card -->
+      <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.4s;">
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-indigo-100 p-4 rounded-full mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="margin: 10px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" class="" style="margin: 8px;"></path>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-neutral-900 mb-2">LinkedIn</h4>
+          <a href="https://www.linkedin.com/in/priyadharshini-k-02b590212" target="_blank" class="text-indigo-600 hover:text-indigo-700">View Profile</a>
+        </div>
+      </div>
+
+      <!-- Location Card -->
+      <div class="bg-white p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp hover:transform hover:scale-105 transition-all duration-300" style="animation-delay: 0.6s;">
+        <div class="flex flex-col items-center text-center">
+          <div class="bg-indigo-100 p-4 rounded-full mb-4">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="margin: 10px;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" class=""></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" class=""></path>
+            </svg>
+          </div>
+          <h4 class="text-lg font-semibold text-neutral-900 mb-2">Location</h4>
+          <p class="text-neutral-600">Bangalore, India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactSection = document.querySelector('#contact');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.animate__animated').forEach((element, index) => {
+              setTimeout(() => {
+                element.style.visibility = 'visible';
+                element.classList.add('animate__fadeIn');
+              }, index * 200);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(contactSection);
+    });
+  </script>
+</section>
+<!-- <section id="contact" class="py-20 bg-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl font-bold text-neutral-900 mb-4">Get In Touch</h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+     
+      <div class="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInLeft">
+        <h3 class="text-2xl font-bold text-neutral-900 mb-6">Contact Information</h3>
+        <div class="space-y-6">
+          <div class="flex items-center space-x-4">
+            <div class="bg-indigo-100 p-3 rounded-full">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-neutral-900">Email</h4>
+              <a href="mailto:pd999796@gmail.com" class="text-indigo-600 hover:text-indigo-700">pd999796@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div class="bg-indigo-100 p-3 rounded-full">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-neutral-900">Phone</h4>
+              <a href="tel:+917019625823" class="text-indigo-600 hover:text-indigo-700">+91-7019625823</a>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div class="bg-indigo-100 p-3 rounded-full">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-neutral-900">LinkedIn</h4>
+              <a href="www.linkedin.com/in/priyadharshini-k-02b590212" target="_blank" class="text-indigo-600 hover:text-indigo-700">View Profile</a>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div class="bg-indigo-100 p-3 rounded-full">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-neutral-900">Location</h4>
+              <p class="text-neutral-600">Bangalore, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="bg-white p-8 rounded-lg shadow-lg animate__animated animate__fadeInRight">
+        <h3 class="text-2xl font-bold text-neutral-900 mb-6">Send Message</h3>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-neutral-700">Name</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-neutral-700">Email</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+          </div>
+          <div class="">
+            <label for="message" class="block text-sm font-medium text-neutral-700">Message</label>
+            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactSection = document.querySelector('#contact');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.animate__animated').forEach((element, index) => {
+              setTimeout(() => {
+                element.style.visibility = 'visible';
+                element.classList.add('animate__fadeIn');
+              }, index * 200);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(contactSection);
+    });
+  </script>
+</section> -->
+</htmlcode>
+              </element><element id="8f6e775f-5698-41a9-aee7-49de9a60a685" data-section-id="8f6e775f-5698-41a9-aee7-49de9a60a685">
+
+
+                <htmlcode id="el-i1kohehj">
+<footer id="footer" class="bg-neutral-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="el-cdegqt88">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Quick Links -->
+      <div class="animate__animated animate__fadeIn" style="visibility: visible;">
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li class="">
+            <a href="#about" class="text-neutral-400 hover:text-white transition-colors">About</a>
+          </li>
+          <li class="">
+            <a href="#experience" class="text-neutral-400 hover:text-white transition-colors">Experience</a>
+          </li>
+          <li class="">
+            <a href="#skills" class="text-neutral-400 hover:text-white transition-colors">Skills</a>
+          </li>
+          <li class="">
+            <a href="#projects" class="text-neutral-400 hover:text-white transition-colors">Projects</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="animate__animated animate__fadeIn" style="animation-delay: 0.2s; visibility: visible;">
+        <h3 class="text-lg font-semibold mb-4">Contact</h3>
+        <ul class="space-y-2">
+          <li class="flex items-center text-neutral-400">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            <a href="mailto:pd999796@gmail.com" class="hover:text-white transition-colors">pd999796@gmail.com</a>
+          </li>
+          <li class="flex items-center text-neutral-400">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            <a href="tel:+917019625823" class="hover:text-white transition-colors">+91-7019625823</a>
+          </li>
+          <!-- Added WhatsApp -->
+          
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      
+
+      <!-- Location -->
+      <div class="animate__animated animate__fadeIn" style="animation-delay: 0.6s; visibility: visible;">
+        <h3 class="text-lg font-semibold mb-4">Location</h3>
+        <p class="text-neutral-400">
+          #36, Balaji Layout, Gollahalli,<br>
+          Electronic city phase 1,<br>
+          Bangalore- 560092.
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-800 mt-8 pt-8 text-center">
+      <p class="text-neutral-400 text-sm">
+        © 2024 K. Priyadharshini. All rights reserved.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const footerSection = document.querySelector('#footer');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.animate__animated').forEach((element, index) => {
+              setTimeout(() => {
+                element.style.visibility = 'visible';
+                element.classList.add('animate__fadeIn');
+              }, index * 200);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      observer.observe(footerSection);
+    });
+  </script>
+</footer>
+</htmlcode>
+              </element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
